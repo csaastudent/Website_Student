@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSAA</title>
+        <link rel="stylesheet" href="/style.css" />
+
+        <script>
+            const Http = new XMLHttpRequest();
+            Http.open("GET", "/getpageinfo" + window.location.pathname)
+            Http.send()
+            var pathname = window.location.pathname
+            var paths = pathname.split('/')
+            Http.onreadystatechange = (e) => {
+                if (Http.readyState == 4 && Http.status == 200) {
+                    document.getElementById("footer").src=`/${paths[2]}/header.png`;
+                    var res = JSON.parse(Http.responseText)
+                    console.log(res);
+                    for (var i = 0; i<res.length; i++) {
+                        document.getElementById(`m${i+1}`).innerHTML = res[i];
+                        document.getElementById(`m${i+1}`).href=`${pathname}/M${i+1}`
+                    }
+                }
+            }
+        </script>
+	</head>
+    <body>
+        <p style="text-align: center;">
+		    <img src="/picture/CSAA LOGO.jpg" height="100">
+        </p>
+        <!-- <div class="nva">
+            <table>
+                <tbody>
+                <tr>
+                    <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="../CSAA Website.html">HOME</a></td>
+                    <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="../CSAA Robotics.html">ROBOTICS</a></td>
+                    <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="../WEDO2.0.html">WEDO 2.0</a></td>
+                    <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="../EV3.html">EV3</a></td>
+                    <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="../VEXIQ.html">VEX IQ</a></td>
+                    <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="../VEXEDR.html">VEX EDR</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div> -->
+        <div class="backbutton">
+            <img src="/picture/back_button.png" height="30" class="middle" onclick="history.back()">
+            <a class="backbutton" onclick="history.back()">Back</a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num1.jpg" height="60" class="middle">
+            <a class="knowledge" id="m1" href="M1"></a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num2.jpg" height="60" class="middle">
+            <a class="knowledge" id="m2" href="M2"></a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num3.jpg" height="60" class="middle">
+            <a class="knowledge" id="m3" href="M3"></a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num4.jpg" height="60" class="middle">
+            <a class="knowledge" id="m4" href="M4"></a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num5.jpg" height="60" class="middle">
+            <a class="knowledge" id="m5" href="M5"></a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num6.jpg" height="60" class="middle">
+            <a class="knowledge" id="m6" href="M6"></a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num7.jpg" height="60" class="middle"> 
+            <a class="knowledge" id="m7" href="M7"></a>
+        </div>
+        <div class="knowledge">
+            <img src="/picture/numbers/num8.jpg" height="60" class="middle">
+            <a class="knowledge" id="m8" href="M8"></a>
+        </div>
+        <hr />
+            <p style="text-align: right;">
+                <img id="footer" src="asdf" height="120">
+            </p>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+{
+    "A5" : {
+        "L1" : {
+            "Setup coding environment": {
+            },
+            "Numbers and math": {
+            },
+            "Advanced math": {
+            },
+            "Strings": {
+            },
+            "Input and output": {
+            },
+            "Coding conventions": {
+            },
+            "Intro to Arrays": {
+            },
+            "Exercises": {
+            }
+        },
+        "L2" : {
+            "Booleans": {
+            },
+            "Logic operators": {
+            },
+            "If statements": {
+            },
+            "Advanced if statements": {
+            },
+            "While loops": {
+            },
+            "For loops": {
+            },
+            "Exceptions": {
+            },
+            "Exercises": {
+            }
+        },
+        "L3" : {
+            "Functions": {
+            },
+            "Overloading functions": {
+            },
+            "Classes": {
+            },
+            "Encapsulation": {
+            },
+            "Instance functions": {
+            },
+            "Multi dimensional arrays": {
+            },
+            "Built in classes": {
+            },
+            "Exercises": {
+            }
+        },
+        "L4" : {
+            "Inheritance": {
+            },
+            "Abstraction": {
+            },
+            "Interfaces": {
+            },
+            "Importing self written files": {
+            },
+            "Modifiers": {
+            },
+            "Arraylists": {
+            },
+            "List interface": {
+            },
+            "Exercises": {
+            }
+        },
+        "L5" : {
+            "Recursive functions": {
+            },
+            "Recursion exercises": {
+            },
+            "Binary search and big O notation": {
+            },
+            "Selection sort and Insertion sort": {
+            },
+            "Merge sort and Quick sort": {
+            },
+            "Creating and reading files": {
+            },
+            "Graph theory": {
+            },
+            "Exercises and some software development methodology": {
+            }
+        }
+    },
+    "A4" : {
+        "L1" : {
+            "Setup coding environment": {
+            },
+            "Numbers and math": {
+            },
+            "Advanced math": {
+            },
+            "Strings": {
+            },
+            "Input and output": {
+            },
+            "Lists": {
+            },
+            "Coding conventions": {
+            },
+            "Exercises": {
+            }
+        },
+        "L2" : {
+            "If statements": {
+            },
+            "If statements pt 2: electric boogaloo": {
+            },
+            "While Loops": {
+            },
+            "For Loops": {
+            },
+            "String Formatting and Exercises": {
+            },
+            "Multi Dimensional Lists": {
+            },
+            "Exceptions": {
+            },
+            "Exercises": {
+            }
+        },
+        "L3" : {
+            "Functions": {
+            },
+            "More About Functions": {
+            },
+            "Dictionaries, Sets, Tuples": {
+            },
+            "Writing/Reading from file": {
+            },
+            "Classes": {
+            },
+            "Instance Functions": {
+            },
+            "Importing/PIP": {
+            },
+            "Exercises": {
+            }
+        }
+    }
+}

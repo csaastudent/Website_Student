@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script>
+            const Http = new XMLHttpRequest();
+            Http.open("GET", "/getpageinfo" + window.location.pathname)
+            Http.send()
+            
+            Http.onreadystatechange = (e) => {
+                if (Http.readyState == 4 && Http.status == 200) {
+                    var res = JSON.parse(Http.responseText)
+                    console.log()
+                    var pathname = window.location.pathname
+                    var paths = pathname.split('/')
+                    console.log(paths);
+					var iconPath = "/" + paths[2] + "header.png";
+                    //document.getElementById("header").src=`/${paths[2]}/header.png`;
+					document.getElementById("header").src=iconPath;
+                    const picdiv = document.getElementById("levels")
+                    console.log(res.length-1);
+                    console.log(res);
+                    for (var i = 8; i > res.length; i--) {
+                        console.log(i);
+                        document.getElementById(`level${i}`).remove();
+                    }
+                    for (var i = 0; i < res.length; i++) {
+                        console.log("res length:" + res[i+1]);
+                        console.log("path name:" + pathname);
+                        document.getElementById(`level${i+1}`).href=`${pathname}/${res[i]}`
+                        document.getElementById(`level${i+1}pic`).src=`/picture/level${i+1}.png`;
+                    }
+                }
+            }
+        </script>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSAA</title>
+        <link rel="stylesheet" href="/style.css" />
+	</head>
+    <body>
+        <p style="text-align: center;">
+		    <img id="header" src="" height="100">
+        </p>
+        <div class="nva">
+            <!-- <table>
+                <tbody>
+                <tr>
+                    <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/CSAA Website.html">HOME</a></td>
+                    <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/CSAA Algorithm.html">Algorithm</a></td>
+                    <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/Scratch_Coding.html">SCRATCH</a></td>
+                    <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/Roblox_Coding.html">ROBLOX</a></td>
+                    <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/Java_Coding.html">JAVA</a></td>
+                </tr>
+                </tbody>
+            </table> -->
+        </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+            <div class="pic" id="levels">
+                <a class="pic" id="level1" href="">
+                    <img id="level1pic" src="" width="170" height="170">
+                </a>
+                <a class="pic" id="level2" href="">
+                    <img id="level2pic" src="" width="170" height="170">
+                </a>
+                <a class="pic" id="level3" href="">
+                    <img id="level3pic" src="" width="170" height="170">
+                </a>
+                <br>
+                <a class="pic" id="level4" href="">
+                    <img id="level4pic" src="" width="170" height="170">
+                </a>
+                <a class="pic" id="level5" href="">
+                    <img id="level5pic" src="" width="170" height="170">
+                </a>
+                <a class="pic" id="level6" href="">
+                    <img id="level6pic" src="" width="170" height="170">
+                </a>
+                <br>
+                <a class="pic" id="level7" href="">
+                    <img id="level7pic" src="" width="170" height="170">
+                </a>
+                <a class="pic" id="level8" href="">
+                    <img id="level8pic" src="" width="170" height="170">
+                </a>
+            </div> 
+            <br>
+            <br>
+            <br>
+            <hr />
+            <p style="text-align: right;">
+                <img src="/picture/CSAA LOGO.jpg" height="80">
+            </p>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgba(245, 222, 179, 0.52);
+}
+table{
+    table-layout: fixed;
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    border: 0px solid rgb(250, 250, 250);
+}
+td{
+    margin: 0 auto;
+}
+div td{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+td a{
+    display: block;
+    height: 50px;
+}
+a:link, a:visited{
+    text-decoration: none;
+    font-weight: 550;
+    color: rgb(0, 0, 0);
+}
+#science:hover{
+    background-color: rgb(33, 240, 240);
+    color: rgba(30, 58, 219, 0.897);
+}
+#maker:hover{
+    background-color: rgb(243, 186, 215);
+    color: rgba(30, 58, 219, 0.897);
+}
+#algorithm:hover{
+    background-color: rgb(240, 212, 54);
+    color: rgba(30, 58, 219, 0.897);
+}
+#robotics:hover{
+    background-color: rgb(235, 57, 57);
+    color: rgba(30, 58, 219, 0.897);
+}
+#technology:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgba(30, 58, 219, 0.897);
+}
+a.pic {
+    color:rgba(245, 222, 179, 0);
+    background-color: rgba(245, 222, 179, 0);
+    margin: 80px;
+}
+div.pic{
+    text-align: center;
+}
+a.name{
+    color:rgb(7, 7, 7);
+    margin: 120px;
+}
+div.name{
+    margin: auto;
+    text-align: center;
+}
+a.name:hover{
+    color: rgba(30, 58, 219, 0.897);
+}
+a.knowledge{
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration-color: black;
+}
+a.knowledge:hover{
+    color: rgba(30, 58, 219, 0.897);
+}
+div.knowledge{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0);
+    width: 960px;
+    height: 50px;
+    margin: auto;
+    line-height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0);
+    font-size: 25px;
+}
+.middle{
+    vertical-align: middle;
+}
+a.wedopic{
+    margin: 1px;
+}
+div.wedopic{
+    text-align: center;
+    margin: auto;
+}
+a.spikepic{
+    margin: 1px;
+}
+div.spikepic{
+    width: 960px;
+    text-align: center;
+    margin: auto;
+}
+a.backbutton{
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration-color: black;
+}
+a.backbutton:hover{
+    color: rgba(30, 58, 219, 0.897);
+}
+div.webpage{
+    width: 960px;
+    text-align: center;
+    margin: auto;
+}
+a.webpage{
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration-color: red;
+    font-size: x-large;
+    text-align: center;
+}
+a.webpage:hover{
+    color: rgba(30, 58, 219, 0.897);
+}
+div.backbutton{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0);
+    width: 960px;
+    height: 50px;
+    margin: auto;
+    line-height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0);
+}
+div.vexiq{
+    width: 960px;
+    text-align: left;
+    margin: 30px auto;
+}
+div.vexgo{
+    width: 960px;
+    text-align: left;
+    margin: auto;
+}
+div.vexvr{
+    width: 960px;
+    text-align: left;
+    margin: auto;
+}
+div.picWithText{
+    display: inline-block;
+    text-align: center;
+    margin: 3px;
+}
+a.picWithText:hover{
+    color: rgba(30, 58, 219, 0.897);
+}
+
+.column {
+    text-align:center;
+}
+
+.tasks {
+    display: inline-block;
+}
